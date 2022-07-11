@@ -38,6 +38,9 @@ insert into courses(courseId,topicName,teacherName,description) values(3103,'che
 insert into topics(courseId,studentId,teacherId) values(3110,1011,1016);
 insert into topics(courseId,studentId,teacherId) values(3101,1012,1017);
 insert into topics(courseId,studentId,teacherId) values(3103,1013,1018);
+insert into topics(courseId,studentId,teacherId) values(3109,1014,1013);
+insert into topics(courseId,studentId,teacherId) values(3103,1014,1015);
+insert into topics(courseId,studentId,teacherId) values(3109,1016,1017);
 
 describe logIn;
 describe student;

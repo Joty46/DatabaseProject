@@ -161,26 +161,7 @@ dbms_output.put_line('Average Age is '||avgAge);
 end;
 /
 
---trigger
-drop trigger tr_age;
-set serveroutput on
-create trigger tr_age
-before update or insert on logIn
-for each row
-declare 
-ran_number int;
-begin
-select dbms_random.value(1,100) into ran_number from dual;
-dbms_output.put_line(ran_number);
-if: new.age is null then
-:new.age:=ran_number;
-end if;
-end tr_age;
-/
-show errors;
 
-insert into logIn(userId,userName,password,age) values(1045,'habib shah','csaa',' ');
-select * from logIn;
 
 
 
